@@ -1,0 +1,174 @@
+/* universal selector */
+* {
+    font-family: sans-serif;
+}
+
+body {
+}
+
+/* header section */
+header {
+    display: flex;
+    justify-content: space-between; /*pushes .name and .navbar to opposite ends of flex container*/
+    background: teal;
+    min-height: max-content;
+}
+
+.name {
+    color: white;
+    background: orange;
+    width: 50%; /*takes up half of header (flex container)*/
+    min-width: fit-content;
+}
+
+.navbar {
+    display: flex; /*defines .navbar as a flex container*/
+    justify-content: flex-end;
+    align-items: flex-end;
+    width: 50%; /*takes up other half of header (flex container)*/
+    background: yellow;
+}
+
+    .navitems {
+        display: flex; /*defines .navbar ul as a flex container*/
+        flex-flow: row wrap;
+        justify-content: flex-end;
+        align-items: flex-end;
+        align-content: center;
+        min-width: 50%;
+        background: blue;
+        border: 1px solid blue;
+    }
+
+    .navbar li {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        list-style: none;
+        padding: 3px;
+        height: fit-content;
+        min-width: fit-content;
+        background: violet;
+        border: 1px solid white;
+    }
+
+
+/* div img */
+.imgbreak {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    background-image: url(/assets/abstract.jpg);
+    background-position: center top;
+}
+
+    #breakcontent {
+        padding: 0 5px;
+        color: white;
+        border: 2px solid white;
+    }        
+        
+
+/* main */
+main{
+    border: 2px solid black;
+}
+
+    aside h2 {
+        border: 2px solid black;
+    }
+
+
+/* about me section */
+.about-me {
+    display: flex;
+    justify-content: space-between;
+    background: blue;
+}
+
+    .about-me-aside {
+        display: flex;
+        justify-content: flex-end;
+        background: hotpink;
+        opacity: 80%;
+        border: 2px solid hotpink;
+        width: 15%;
+        min-height: 200px;
+    }
+
+    .about-me-aside h2 {
+        
+    }
+
+    .about-me-box {
+        width: 85%;
+    }
+/* work section */
+.work {
+    display: flex;
+    background: green;
+}
+
+    .work-aside {
+        display: flex;
+        justify-content: flex-end;
+        background: hotpink;
+        opacity: 80%;
+        border: 2px solid hotpink;
+        width: 15%;
+        
+    }
+
+    .work-box {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        align-items: center;
+        width: 85%;
+    }
+
+        figure {
+            flex: 0 1 600px;
+            min-height: 200px;
+            border: 1px solid black;
+            margin: 10px 15px;
+        }
+
+            #work-big {
+                flex: 0 1 1230px;
+                min-height: 200px;
+            }
+
+
+/* contact me section */
+.contact-me {
+    display: flex;
+    justify-content: space-between;
+    background: orange;
+}
+    
+    .contact-me-aside {
+        display: flex;
+        justify-content: flex-end;
+        background: hotpink;
+        opacity: 80%;
+        border: 2px solid hotpink;
+        width: 15%;
+    }
+
+    .contact-me-box {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        align-items: flex-end;
+        list-style: none;
+        width: 80%;
+        border: 2px solid black;
+    }
+
+        .contact-me-box li {
+            display: inline-flex;
+            margin: 0 40px;
+        }

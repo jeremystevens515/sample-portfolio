@@ -3,15 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" type="text/css"  href="/assets/reset.css"> -->
     <link rel="stylesheet" type="text/css"  href="/assets/style.css">
     <title>Jeremy Stevens Portfolio</title>
 </head>
 
 <body>
     <header>
-        <h1>Jeremy Stevens</h1>
-        <nav>
-            <ul>
+        <h1 class="name">Jeremy Stevens</h1>
+        <nav class="navbar">
+            <ul class="navitems">
                 <li>
                     <a href="#">About Me</a>
                 </li>
@@ -28,42 +29,54 @@
         </nav>
     </header>
 
-    <div>
-        <img>
-        <h3>Cool Content</h3>
+    <div class="imgbreak">
+        <h3 id="breakcontent">Cool Content</h3>
     </div>
 
     <main>
-        <aside>
+        <!-- <aside>
             <h2>About Me</h2>
             <h2>Work</h2>
             <h2>Contact Me</h2>
-        </aside>
+        </aside> -->
 
         <Section class="about-me">
-            <p>Giberish about me.</p>
+            <aside class="about-me-aside">
+                <h2>About Me</h2>
+            </aside>
+            <article class="about-me-box">
+                <p>Giberish about me.</p>
+            </article>
         </Section>
 
         <section class="work">
-            <figure id="work-1">
-                <figcaption>Work 1</figcaption>
-            </figure>
-            <figure id="work-2">
-                <figcaption>Work 2</figcaption>
-            </figure>
-            <figure id="work-3">
-                <figcaption>Work 3</figcaption>
-            </figure>
-            <figure id="work-4">
-                <figcaption>Work 4</figcaption>
-            </figure>
-            <figure id="work-5">
-                <figcaption>Work 5</figcaption>
-            </figure>
+            <aside class="work-aside">
+                <h2>Work</h2>
+            </aside>
+            <article class="work-box">
+                <figure id="work-big">
+                    <figcaption>Work 1</figcaption>
+                </figure>
+                <figure>
+                    <figcaption>Work 2</figcaption>
+                </figure>
+                <figure>
+                    <figcaption>Work 3</figcaption>
+                </figure>
+                <figure>
+                    <figcaption>Work 4</figcaption>
+                </figure>
+                <figure>
+                    <figcaption>Work 5</figcaption>
+                </figure>
+            </article>
         </section>
 
         <section class="contact-me">
-            <ul>
+            <aside class="contact-me-aside">
+                <h2>Contact Me</h2>
+            </aside>
+            <ul class="contact-me-box">
                 <li>
                     <a href="#">Number</a>
                 </li>
