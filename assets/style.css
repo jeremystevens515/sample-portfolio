@@ -56,7 +56,7 @@ header {
         border-bottom: 3px solid white;
     }
 
-a {
+.nav-link {
     color: white;
     text-decoration: none;
 }
@@ -145,7 +145,7 @@ main{
             align-items: flex-start;
             flex: 0 1 600px;
             min-height: 200px;
-            border: 1px solid black;
+            border: 3px solid white;
             margin: 10px 15px;
         }
 
@@ -217,10 +217,12 @@ main{
         align-items: flex-end;
         list-style: none;
         width: 80%;
-        border: 2px solid black;
+        border-top: 2px solid white;
     }
 
         .contact-me-box li {
             display: inline-flex;
+            padding: 5px;
             margin: 0 40px;
+            border-bottom: 2px solid white;
         }
