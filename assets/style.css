@@ -70,6 +70,7 @@ header {
     background-position: center;
     background-size: 100%;
     background-repeat: no-repeat;
+    height: 90px;
 }
 
     #breakcontent {
@@ -150,7 +151,7 @@ main {
         }
 
             #work-big {
-                flex: 0 1 1230px;
+                flex: 0 1 1237px;
                 min-height: 200px;
                 background-image: url(/assets/microchip.jpg);
                 background-position: 75% 63%;
