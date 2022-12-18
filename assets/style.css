@@ -82,7 +82,7 @@ header {
 
 
 /* main */
-main{
+main {
 
 }
 
@@ -138,7 +138,7 @@ main{
         width: 85%;
     }
 
-        figure {
+        .work-box a {
             display: flex;
             flex-flow: column wrap;
             justify-content: flex-end;
@@ -182,17 +182,18 @@ main{
                 background-size: 150%;
             }
 
-            figcaption {
+            figure {
                 font-size: 25px;
                 padding: 3px;
+                margin: 0;
             }
 
-            figcaption + p {
+            figure + p {
                 margin: 0;
                 padding: 3px;
             }
 
-        figure:hover {
+        .work-box a:hover {
             cursor: pointer;
             box-shadow: 5px 5px 60px 20px gray;
         }
