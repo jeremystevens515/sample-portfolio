@@ -144,14 +144,14 @@ main {
             flex-flow: column wrap;
             justify-content: flex-end;
             align-items: flex-start;
-            flex: 0 1 600px;
+            flex: 0 1 48%;
             min-height: 200px;
             border: 3px solid white;
             margin: 10px 15px;
         }
 
             #work-big {
-                flex: 0 1 1237px;
+                flex: 0 1 100%;
                 min-height: 200px;
                 background-image: url(/assets/microchip.jpg);
                 background-position: 75% 63%;
