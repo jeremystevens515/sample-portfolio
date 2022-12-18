@@ -1,6 +1,8 @@
 /* universal selector */
 * {
     font-family: sans-serif;
+    color: white;
+    background-color: darkslategray;
 }
 
 body {
@@ -10,23 +12,25 @@ body {
 header {
     display: flex;
     justify-content: space-between; /*pushes .name and .navbar to opposite ends of flex container*/
-    background: teal;
+    color: white;
+    background: darkslategray;
     min-height: max-content;
 }
 
 .name {
-    color: white;
-    background: orange;
-    width: 50%; /*takes up half of header (flex container)*/
-    min-width: fit-content;
+    font-size: 42px;
+    max-width: 50%; /*takes up half of header (flex container)*/
+    height: fit-content;
+    width: fit-content;
+    padding: 3px;
+    background-color: teal;
 }
 
 .navbar {
     display: flex; /*defines .navbar as a flex container*/
     justify-content: flex-end;
     align-items: flex-end;
-    width: 50%; /*takes up other half of header (flex container)*/
-    background: yellow;
+    width: 50%; /*takes up other half of header (flex container)*/    
 }
 
     .navitems {
@@ -36,8 +40,6 @@ header {
         align-items: flex-end;
         align-content: center;
         min-width: 50%;
-        background: blue;
-        border: 1px solid blue;
     }
 
     .navbar li {
@@ -46,38 +48,49 @@ header {
         justify-content: center;
         align-items: center;
         align-content: center;
-        list-style: none;
-        padding: 3px;
         height: fit-content;
         min-width: fit-content;
-        background: violet;
-        border: 1px solid white;
+        list-style: none;
+        padding: 5px;
+        margin: 0 10px;
+        border-bottom: 3px solid white;
     }
 
+a {
+    color: white;
+    text-decoration: none;
+}
 
 /* div img */
 .imgbreak {
     display: flex;
     justify-content: flex-end;
     align-items: flex-end;
-    background-image: url(/assets/abstract.jpg);
-    background-position: center top;
+    background-image: url(/assets/trees.jpg);
+    background-position: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
 }
 
     #breakcontent {
         padding: 0 5px;
         color: white;
-        border: 2px solid white;
-    }        
-        
+        background-color: 
+        font-weight: 75;
+    }
+    
+
 
 /* main */
 main{
-    border: 2px solid black;
+
 }
 
     aside h2 {
-        border: 2px solid black;
+        font-size: 200%;
+        border-right: 3px solid white;
+        max-height: fit-content;
+        padding: 0 15px;
     }
 
 
@@ -85,38 +98,34 @@ main{
 .about-me {
     display: flex;
     justify-content: space-between;
-    background: blue;
 }
 
     .about-me-aside {
         display: flex;
         justify-content: flex-end;
-        background: hotpink;
-        opacity: 80%;
-        border: 2px solid hotpink;
         width: 15%;
         min-height: 200px;
     }
 
-    .about-me-aside h2 {
-        
-    }
-
     .about-me-box {
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
         width: 85%;
     }
+
+        .about-me-box p {
+            margin: 20px 10px;
+        }
+
 /* work section */
 .work {
     display: flex;
-    background: green;
 }
 
     .work-aside {
         display: flex;
         justify-content: flex-end;
-        background: hotpink;
-        opacity: 80%;
-        border: 2px solid hotpink;
         width: 15%;
         
     }
@@ -130,6 +139,10 @@ main{
     }
 
         figure {
+            display: flex;
+            flex-flow: column wrap;
+            justify-content: flex-end;
+            align-items: flex-start;
             flex: 0 1 600px;
             min-height: 200px;
             border: 1px solid black;
@@ -139,22 +152,61 @@ main{
             #work-big {
                 flex: 0 1 1230px;
                 min-height: 200px;
+                background-image: url(/assets/microchip.jpg);
+                background-position: 75% 63%;
+                background-size: 200%;
             }
+
+    
+            #work-2 {
+                background-image: url(/assets/bike.jpg);
+                background-position: 75% 25%;
+                background-size: 150%;
+            }
+
+            #work-3 {
+                background-image: url(/assets/camera.jpg);
+                background-position: 50% 50%;
+                background-size: 150%;
+            }
+
+            #work-4 {
+                background-image: url(/assets/keyboard.jpg);
+                background-position: 75% 25%;
+                background-size: 150%;
+            }
+
+            #work-5 {
+                background-image: url(/assets/abstract.jpg);
+                background-position: 75% 25%;
+                background-size: 150%;
+            }
+
+            figcaption {
+                font-size: 25px;
+                padding: 3px;
+            }
+
+            figcaption + p {
+                margin: 0;
+                padding: 3px;
+            }
+
+        figure:hover {
+            cursor: pointer;
+            box-shadow: 5px 5px 60px 20px gray;
+        }
 
 
 /* contact me section */
 .contact-me {
     display: flex;
     justify-content: space-between;
-    background: orange;
 }
     
     .contact-me-aside {
         display: flex;
         justify-content: flex-end;
-        background: hotpink;
-        opacity: 80%;
-        border: 2px solid hotpink;
         width: 15%;
     }
 
