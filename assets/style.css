@@ -66,7 +66,7 @@ header {
     display: flex;
     justify-content: flex-end;
     align-items: flex-end;
-    background-image: url(./assets/trees.jpg);
+    background-image: url(trees.jpg);
     background-position: center;
     background-size: 100%;
     background-repeat: no-repeat;
@@ -153,32 +153,32 @@ main {
             #work-big {
                 flex: 0 3 100%;
                 min-height: 200px;
-                background-image: url(assets/microchip.jpg);
+                background-image: url(microchip.jpg);
                 background-position: 75% 63%;
                 background-size: 200%;
             }
 
     
             #work-2 {
-                background-image: url(assets/bike.jpg);
+                background-image: url(bike.jpg);
                 background-position: 75% 25%;
                 background-size: 150%;
             }
 
             #work-3 {
-                background-image: url(assets/camera.jpg);
+                background-image: url(camera.jpg);
                 background-position: 50% 50%;
                 background-size: 150%;
             }
 
             #work-4 {
-                background-image: url(assets/keyboard.jpg);
+                background-image: url(keyboard.jpg);
                 background-position: 75% 25%;
                 background-size: 150%;
             }
 
             #work-5 {
-                background-image: url(assets/abstract.jpg);
+                background-image: url(abstract.jpg);
                 background-position: 75% 25%;
                 background-size: 150%;
             }
